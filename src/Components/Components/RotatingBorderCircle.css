@@ -1,0 +1,14 @@
+@keyframes rotateGradient {
+  0% {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 3000;
+    stroke-dashoffset: -3000;
+  }
+}
+
+.rotating-border {
+  animation: rotateGradient 10s linear infinite;
+}

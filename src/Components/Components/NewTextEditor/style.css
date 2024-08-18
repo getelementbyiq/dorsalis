@@ -1,0 +1,79 @@
+.canvas-container {
+  position: relative; /* Wichtig, wenn du absolute Positionierung verwendest */
+  width: 100%; /* Kann angepasst werden */
+  height: 100vh; /* Passt die Höhe an das volle Fenster an */
+  overflow: auto; /* Ermöglicht das Scrollen */
+}
+
+/* Canvas oder Inhalte innerhalb des Containers */
+.canvas-content {
+  width: 200%; /* Größer als der Container, um das Scrollen auszulösen */
+  height: 200%; /* Größer als der Container, um das Scrollen auszulösen */
+}
+
+.scroll-container {
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Setze den Inhalt größer als der Container, um das Scrollen zu testen */
+.large-content {
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #f06, yellow);
+}
+
+.tl-shape {
+  color: red !important;
+}
+.editor-style {
+  width: 800px; /* Breite des Editors */
+  height: 500px; /* Höhe des Editors */
+}
+
+.ql-container.ql-snow {
+  border: none !important;
+  background: #eff4ff;
+  border-radius: 8px;
+  margin-top: 4px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.ql-toolbar.ql-snow {
+  position: sticky;
+  z-index: 3000;
+  top: 4px;
+  border: none !important;
+  margin-top: 4px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.ql-editor {
+  overflow-y: auto !important; /* Versteckt den vertikalen Scrollbalken */
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.react-quill {
+  width: 210mm; /* Breite von A4 */
+  min-height: 297mm; /* Höhe von A4 */
+  padding: 20mm; /* Angemessener Innenabstand */
+  border: 1px solid #ccc; /* Sichtbarer Rahmen */
+  background: #fff; /* Weißer Hintergrund */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatten für das Papiergefühl */
+}

@@ -1,0 +1,44 @@
+.box {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.box::before,
+.box::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.7);
+  animation: clipMe 4s linear infinite;
+}
+
+.box::after {
+  animation-delay: -2s;
+}
+
+@keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0px, 100%, 10px, 0px);
+  }
+  25% {
+    clip: rect(0px, 10px, 100%, 0px);
+  }
+  50% {
+    clip: rect(90%, 100%, 100%, 0px);
+  }
+  75% {
+    clip: rect(0px, 100%, 100%, 90%);
+  }
+}
+
+.box:hover::before,
+.box:hover::after {
+  background-color: rgba(255, 0, 0, 0.3);
+}
